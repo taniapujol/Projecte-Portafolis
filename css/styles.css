@@ -1,0 +1,69 @@
+/*Importando fonts de google*/
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+/*la llamda a esta fuente es: font-family: 'Caveat Brush', cursive;*/
+@import url('https://fonts.googleapis.com/css?family=Acme');
+/*la lladad a esta fuente es: font-family: 'Acme', sans-serif;*/
+/*Resetear página*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+/*Css para la animación*/
+.hidden{opacity: 0;}
+.visible{opacity: 1;}
+/*Css del fondo de la portada*/
+.portada{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  min-height: initial;
+  top:0;
+  left: 0;
+  z-index: -100;
+  background-image: url(../img/puzzle.jpg);
+  background-size: cover;
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+/*css del contenidor (logo) de la imagen y texto*/
+#logo{
+  width: 75%;
+  height: 50%;
+  margin: auto;
+  text-align: center 5o%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+	-moz-animation-duration: 3s;
+	-moz-animation-delay: 0s;
+	-o-animation-duration: 3s;
+  -o-animation-delay: 0s;
+}
+#logo img{
+  margin: 10px;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+}
+p {
+  float: right;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 2em;
+  color: #000;
+}
+span{
+  font-family: 'Acme', sans-serif;
+  font-size: 3em;
+  text-shadow: 3px 3px #fff;
+}
