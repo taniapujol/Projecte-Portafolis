@@ -9,11 +9,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-html, body{
-  height: 100%;
+/*html, body{
+  height: 100%;*/
 }
 /*Css para la animación*/
-.hidden{opacity: 0;}
+.oculdo{opacity: 0;}
 .visible{opacity: 1;}
 /*Css del fondo de la portada*/
 .portada{
@@ -32,23 +32,43 @@ html, body{
   display: flex;
   justify-content: center;
 }
+/* css para el boton de enpezar*/
+#button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(113, 119, 115);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-family: 'Caveat Brush', cursive;
+}
+#button:hover {
+  background-color: rgb(245, 222, 12);
+  color: #000;
+}
+#button:active {
+  background-color: rgb(242, 213, 21);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#button animated {animation-delay: 3s;}
 /*css del contenidor (logo) de la imagen y texto*/
-#logo{
+#logo_portada {
   width: 75%;
   height: 50%;
   margin: auto;
   text-align: center 5o%;
-  display: flex;
-  justify-content: space-between;
   align-items: baseline;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 0s;
-	-moz-animation-duration: 3s;
-	-moz-animation-delay: 0s;
-	-o-animation-duration: 3s;
-  -o-animation-delay: 0s;
+  display: flex;
+  justify-content: center;
 }
-#logo img{
+#logo_portada img{
   margin: 10px;
   transform: rotate(30deg);
   -webkit-transform: rotate(30deg);
@@ -62,8 +82,31 @@ p {
   font-size: 2em;
   color: #000;
 }
-span{
+p span{
   font-family: 'Acme', sans-serif;
   font-size: 3em;
   text-shadow: 3px 3px #fff;
+}
+nav {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(85, 83, 82, 0.54);
+  color: #fff;
+}
+.logo {
+  margin: 10px 10px;
+  padding-bottom: 10px;
+  ;
+  border-bottom: 2px solid #fff;
+}
+.logo img{
+  width: 50px;
+  height: 150px;
+  margin: 10px;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
 }

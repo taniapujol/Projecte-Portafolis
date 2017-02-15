@@ -1,6 +1,8 @@
-$(document).ready(function() {
-    $('.post').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated zoomIn',
-        offset: 100
-       });
-});
+// Aplicamos la animación la portada
+// $(document).ready(function() {
+  // $('#logo').addClass('animated flip');
+  // $('.play').show('slow');
+
+
+// fin del script
+// });
