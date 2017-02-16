@@ -30,16 +30,30 @@
       <nav>
         <div class="logo">
           <img src="img/rompecabezas.png">
+          <p><span>Carlos Pedro</span><br>Desarrollador y Diseñador Web</p>
         </div>
         <div class="menu">
-          <ul>
-            <li class="Inicio"><a href="#">Inicio</a>
-                <ul>
-                    <li><a href="#">Sobre Mi</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </li>
-          </ul>
+          <!-- Creacion de los botones de eleccion del menu  -->
+          <div class="botones">
+            <button id="home">Home</button>
+            <button id="work">Work</button>
+          </div>
+          <div class="menu_seleccion">
+            <!-- Menu de elección home -->
+            <div class="menu_home list-group">
+              <a class="list-group-item" href="#"><i class="fa fa-user-circle-o fa-fw" arial-hidden="true"></i>&nbsp; Quien Soy?</a>
+              <a class="list-group-item" href="#"><i class="fa fa-cogs fa-fw" arial-hidden="true"></i>&nbsp; Servicios</a>
+              <a class="list-group-item" href="#"><i class="fa fa-envelope fa-fw" arial-hidden="true"></i>&nbsp; Contacto</a>
+            </div>
+            <!--menu de elección work -->
+            <div class="menu_work">
+              <a href="#">Html</a>
+              <a href="#">Css3</a>
+              <a href="#">JQuery</a>
+              <a href="#">Php</a>
+              <a href="#">Angular</a>
+            </div>
+          </div>
         </div>
       </nav>
     </header>

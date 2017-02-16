@@ -87,26 +87,75 @@ p span{
   font-size: 3em;
   text-shadow: 3px 3px #fff;
 }
+/* Css del menu lateral de la página */
 nav {
   position: absolute;
-  width: 50%;
+  top: 0;
+  width: 30%;
   height: 100%;
-  background-color: rgba(85, 83, 82, 0.54);
+  background-color: #000;
   color: #fff;
 }
 .logo {
-  margin: 10px 10px;
+  width: 90%;
+  height: 225px;
+  margin: 20px auto;
   padding-bottom: 10px;
-  ;
+  text-align: center;
   border-bottom: 2px solid #fff;
 }
 .logo img{
-  width: 50px;
-  height: 150px;
-  margin: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
   transform: rotate(30deg);
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
   -o-transform: rotate(30deg);
   -ms-transform: rotate(30deg);
+}
+.logo p, .logo p span {
+  margin:0 auto;
+  color: #fff;
+  text-shadow: none;
+}
+.logo p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+.logo p span {font-size: 2em;}
+.menu {
+  width: 90%;
+  margin: 10px auto;
+  padding: 0 20px 0 20px;
+}
+/*Css del boton de selecio del menu*/
+.botones {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  display: block;
+}
+#home, #work {
+  width: 47%;
+  text-align: center;
+  padding-right: 5px;
+}
+#home {float: left;}
+#work {float: right;}
+/*Css del div menu seleccion*/
+.menu_seleccion {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+/*Css del menu de home*/
+.menu_home, .menu_work {
+  margin-top: 10px;
+  height: 200px;}
+.menu_home a{
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #fff;
 }
